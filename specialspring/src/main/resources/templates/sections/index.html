@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Jumbotron example · Bootstrap v5.1</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/jumbotron/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link th:href="@{section/assets/dist/css/bootstrap.min.css}" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+  </head>
+<body>
+    <div th:insert="~{header :: content}"></div>
+
+    <main>
+      <div class="container py-4">
+
+        <div class="p-5 mb-4 bg-light rounded-3 speciality">
+          <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold"></h1>
+            <p class="col-md-8 fs-4">Это - страница каталогов специальностей</p>
+          </div>
+        </div>
+
+
+
+          <div class="row align-items-md-stretch speciality">
+              <th:block th:each="section : ${sections}">
+                <div class="col-md-6 mt-3">
+                  <div class="h-100 p-5 text-white bg-dark rounded-3">
+                      <h2 th:text="${section.getHeading()}"></h2>
+                      <p th:text="${section.getDescription()}"></p>
+                      <a th:href="@{sections/{id}(id=${section.getId()})}" class="btn btn-outline-light">Example button</a>
+                  </div>
+                </div>
+              </th:block>
+          </div>
+      </div>
+
+
+<!--          <div class="spec-block" th:each="section : ${sections}">-->
+<!--              <div class="spec-block-foto">-->
+<!--                  <img class="img-spec" th:src="${section.getAvatar()}" alt="foto-spec">-->
+<!--              </div>-->
+<!--              <div class="spec-text-block">-->
+<!--                  <h1 class="spec-block-title" th:text="${section.getHeading()}"></h1>-->
+<!--                  <h4 class="spec-block-description" th:text="${section.getDescription()}"></h4>-->
+<!--                  <span><a th:href="@{sections/{id}(id=${section.getId()})}"></a></span>-->
+<!--              </div>-->
+<!--          </div>-->
+<!--        </div>-->
+
+    </main>
+
+</body>
+</html>

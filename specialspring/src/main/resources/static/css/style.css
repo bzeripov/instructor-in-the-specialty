@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    color: black;
+    background-color: rgb(241,245,254);
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+    box-shadow: 3px 6px 12px #888888;
+}
+
+.menu-main, .right-menu{
+    padding-top: 15px;
+}
+
+.menu-main li{
+    padding-left: 70px;
+    padding-top: 70px;
+}
+
+ul{
+    list-style: none; 
+}
+
+li{
+    display: inline;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+	cursor: pointer;
+	line-height: 1
+}
+
+a:after {
+	display: block;
+	position: absolute;
+	left: 0; 
+	width: 0;
+	height: 2px; 
+	background-color: black; 
+	content: "";
+	transition: width 0.3s ease-out; 
+}
+
+a:hover:after,
+a:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+.map-kazakhstan{
+    margin-top: 9px;
+    margin-left: 115px;
+}
+
+.menu{
+    padding-left: 30px;
+}
+
+.menu-specialization{
+    background: url(../img/specialization1.png) no-repeat left center;
+    background-size: 20px 20px;
+}
+
+.menu-home{
+    background: url(../img/home.png) no-repeat left center;
+    background-size: 23px 23px;
+}
+
+.menu-lessons{
+    background: url(../img/lesson.png) no-repeat left center;
+    background-size: 23px 23px;
+}
+
+.menu-forum{
+    background: url(../img/forum.png) no-repeat left center;
+    background-size: 23px 23px;
+}
+
+.btn{
+    padding: 10px 10px;
+    padding-left: 30px;
+    background: url(../img/log-in.png) no-repeat left center;
+    background-size: 20px 20px;
+    border: 1px solid black;
+}

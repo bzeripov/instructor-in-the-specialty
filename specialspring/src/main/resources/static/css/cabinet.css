@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cabinet-bd{
+    background-color: #eaedf3;
+    display: flex;
+    height: 673px;
+}
+
+.user-brief-information, .user-information-and-update{
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.user-brief-information{
+    width: 340px;
+    height: 370px;
+    margin-left: 230px;
+    text-align: center;
+}
+
+.user-avatar{
+    border-radius: 180px;
+    width: 230px;
+    height: 230px;
+    margin-top: 20px;
+}
+
+.user-name, .user-post{
+    margin-top: 20px;
+    font-style: bold;
+}
+
+.user-name{
+    color: #5a7391;
+    font-size: 25px;
+}
+
+.user-post{
+    color: #5b9bd1;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.user-information-and-update{
+    width: 670px;
+    height: 510px;
+    margin-left: 40px;
+    padding: 20px;
+    display: block;
+}
+
+.your-informations{
+    font-size: 20px;
+    color: #337ab7;
+    height: 30px;
+    border-bottom: 2px solid #eef1f5;
+    margin-bottom: 20px;
+}
+
+.profile-and-update-btn{
+    display: flex;
+}
+
+.profile-btn, .update-btn{
+    padding-top: 10px;
+    text-align: center;
+    width: 335px;
+    height: 30px;
+    border-radius: 5px 5px 0px 0px;
+    cursor: pointer;
+}
+
+.profile-btn{
+    color: #555;
+    border: 1px solid #555;
+    border-bottom: 1px solid white;
+
+}
+
+.update-btn{
+    border-bottom: 1px solid #555;
+    color: #337ab7;
+    background-color: white;
+}
+
+.profile-and-update-information{
+    border: 1px solid #555;
+    border-top: #fff;
+    height: 420px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.user-profile-name, .user-email,.user-old-password, .user-password,.user-new-password,.user-new-password-confirm{
+    margin-left: 30px;
+    width: 620px;
+    height: 100px;
+    border-bottom: 1px solid #555;
+    padding-top: 18px;
+}
+
+.user-profile-name-title, .user-email-title,.user-old-password-title, .user-password-title,.user-new-password-title{
+    color: #555;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.user-profile-name-output,.user-email-output,.user-password-output{
+    color: #337ab7;
+    font-size: 22px;
+}
+
+.profile{
+    visibility: visible;
+    position: absolute;
+    z-index: 1;
+}
+
+.update{
+    visibility: hidden;
+    position: absolute;
+    z-index: 2;
+}
+
+.some-input {
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    color: #337ab7;
+    outline: none;
+    caret-color: #337ab7;
+    font-size: 22px;
+}
+
+.update-profile-btnabk{
+    margin-top: 10px;
+    margin-left: 280px;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    color: black;
+    border-color: #337ab7;
+    background-color: white;
+    cursor: pointer;
+}
+
+.update-profile-btn:hover,
+.update-foto:hover{
+    color: white;
+    border-color: black;
+    background-color: #337ab7;
+}
+
+.ava-update{
+    display: none;
+}
+
+.example-2abk .btn-tertiary{
+    color: #555;
+    padding: 0;
+    line-height: 40px;
+    width: 200px;
+    margin: auto;
+    display: block;
+    border: 2px solid #555;
+}
+
+.example-2abk .btn-tertiary:hover,.example-2 .btn-tertiary:focus{
+    color: #888;
+    border-color: #888;
+}
+
+.example-2abk .input-file{
+    width: .1px;
+    height: .1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.example-2abk .input-file + .js-labelFile{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    padding:0 10px;
+    cursor:pointer;
+}
+
+.example-2abk .input-file + .js-labelFile .icon:before{
+    content:"\f093";
+}
+
+.example-2abk .input-file + .js-labelFile.has-file .icon:before{
+    content:"\f00c";
+    color:#5AAC7B;
+}
+
+.update-foto{
+    margin-top: 10px;
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    color: black;
+    border-color: #337ab7;
+    background-color: white;
+    cursor: pointer;
+}

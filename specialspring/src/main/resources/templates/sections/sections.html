@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Jumbotron example · Bootstrap v5.1</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/jumbotron/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link th:href="@{sections/assets/dist/css/bootstrap.min.css}" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+  </head>
+<body>
+	<div th:fragment="content" class="bg-dark">
+	<header class="p-3 mb-3 border-bottom">
+		<div class="container">
+			<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+				<a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-light text-decoration-none">
+					<img th:src="@{'img/delta.png'}">
+				</a>
+
+				<ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+					<li><a href="/" class="nav-link px-2 link-light">Home</a></li>
+					<li><a href="/forum" class="nav-link px-2 link-light">Forum</a></li>
+					<li><a href="/speciality" class="nav-link px-2 link-light">Speciality</a></li>
+				</ul>
+
+				<div class="text-end" sec:authorize="isAnonymous()">
+					<a href="signin" class="btn btn-outline-light me-2">Sign In</a>
+				</div>
+
+				<div class="dropdown text-end" sec:authorize="isAuthenticated()">
+					
+					</a>
+					<ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1" style="">
+						<li sec:authorize="hasAnyRole('ROLE_ADMIN')"><a class="dropdown-item" href="/admin">Admin</a></li>
+						<li sec:authorize="hasAnyRole('ROLE_SUPPORT')"><a class="dropdown-item" href="/support">Support</a></li>
+						<li><a class="dropdown-item" href="/profile">Profile</a></li>
+						<li><hr class="dropdown-divider"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	</div>
+
+<main>
+  
+</main>
+
+
+    
+  </body>
+</html>

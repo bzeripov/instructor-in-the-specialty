@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Poppins:wght@200;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0
+}
+
+.blocks{
+    display: flex;
+}
+
+.spec-block{
+    display: flex;
+    width: 690px;
+    height: 250px;
+    background-color: #F8F8FF;
+    margin-top: 20px;
+    margin-left: 40px;
+    border-radius: 10px;
+    border: 1.5px solid #B0C4DE;
+    box-shadow: 2px 5px 5px  #B0C4DE;
+}
+
+.img-spec{
+    width: 250px;
+    height: 200px;
+    margin: 25px;
+}
+
+.spec-block-title{
+    margin-top: 10px;
+    font-family: 'Merriweather', serif;
+}
+
+.spec-text-block{
+    width: 370px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.spec-block-description{
+    height: 110px;
+    margin-top: 30px;
+}
+
+span{
+    position: relative;
+    display: inline-flex;
+    width: 180px;
+    height: 35px;
+    margin: 0 15px;
+    perspective: 1000px;
+}
+
+span a{
+    font-size: 17px;
+    letter-spacing: 1px;
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+    transition: transform .25s;
+    font-family: 'Montserrat', sans-serif;  
+}
+
+span a:before,
+span a:after{
+    position: absolute;
+    content: "Перейти";
+    height: 35px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+span a:before{
+    color: #fff;
+    background: #000;
+    transform: rotateY(0deg) translateZ(25px);
+}
+
+span a:after{
+    color: #000;
+    transform: rotateX(90deg) translateZ(25px);
+}
+  
+span a:hover{
+    transform: translateZ(-25px) rotateX(-90deg);
+}
+  

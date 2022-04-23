@@ -1,0 +1,20 @@
+.p-navSticky.is-sticky-broken, .p-navSticky.is-sticky-disabled {
+    position: static;
+    top: auto;
+}
+.p-navSticky {
+    z-index: 100;
+}
+* {
+    box-sizing: border-box;
+}
+html {
+    font: 15px / 1.4 sans-serif;
+    font-family: 'Segoe UI','Helvetica Neue',Helvetica,Roboto,Oxygen,Ubuntu,Cantarell,'Fira Sans','Droid Sans',sans-serif;
+    font-weight: 400;
+    color: #141414;
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+    background-color: #ececec;
+}

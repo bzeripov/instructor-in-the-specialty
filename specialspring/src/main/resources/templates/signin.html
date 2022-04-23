@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th = "http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{'css/style.reg.css'}">
+    <link rel="shortcut icon" th:href="@{'img/registration-icon.png'}" type="image/png">
+    <title>Вход/Регистрация</title>
+</head>
+
+<body>
+<main>
+    <div class="circle"></div>
+    <div class="register-form-container">
+        <form th:action="@{'/signin'}" method="post">
+            <h1 class="form-title">
+                Регистрация
+            </h1>
+            <div class="form-fields">
+                <div class="form-field">
+                    <input class="user-name" type="text" placeholder="Имя" required pattern="[а-яА-Я]+"
+                           title="Имя может содержать только буквы." name = "user_fullname">
+                </div>
+                <div class="form-field">
+                    <input class="user-email" type="email" placeholder="Почта" required name="user_email">
+                </div>
+                <div class="form-field">
+                    <input class="user-password" type="password" placeholder="Пароль" required minlength="8" maxlength="128" name="user_password">
+                </div>
+            </div>
+            <div class="form-buttons">
+                <button class="button">Регистрация</button>
+                <div class="divider">или</div>
+                <button class="button button-removel" id="transition-enter">Войти</button>
+            </div>
+        </form>
+    </div>
+    <div class="enter-form-container">
+        <form th:action="@{'/auth'}" method="post">
+            <h1 class="form-title">
+                Вход
+            </h1>
+            <div class="form-fields">
+                <div class="form-field">
+                    <input type="email" placeholder="Почта" required name="user_email">
+                </div>
+                <div class="form-field">
+                    <input type="password" placeholder="Пароль" required minlength="8" maxlength="128" name="user_password">
+                </div>
+            </div>
+            <div class="form-buttons">
+                <button class="button">Войти</button>
+                <div class="divider">или</div>
+                <button class="button button-removel" id="transition-register">Регистрация</button>
+            </div>
+        </form>
+    </div>
+</main>
+<script th:src="@{'js/registerandenter.js'}"></script>
+</body>
+
+</html>

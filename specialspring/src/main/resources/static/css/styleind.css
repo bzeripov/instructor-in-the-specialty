@@ -1,0 +1,62 @@
+
+
+ul{
+    list-style: none; 
+}
+
+li{
+    display: inline;
+}
+
+
+
+
+.map-kazakhstan{
+    margin-top: 9px;
+    margin-left: 115px;
+}
+
+
+
+
+.name-region{
+    color: #00b1cc;
+    padding-left: 170px;
+    text-shadow: 1px 1px 1px #fec700;
+    font-size: 20px;
+}
+
+
+.rating-region-university{
+    color: #6c7be1;
+    text-shadow: 1px 1px 1px white;
+}
+
+table{
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #6c7be1;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 20px 20px;
+    border-spacing: 0px 20px;
+    font-size: 22px;
+}
+
+.table-header{
+    color: white;
+}
+
+td{
+    padding-left: 30px;
+    color: #ededff;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+
+.rating-region-university{
+    margin-top: 10px;
+    margin-left: 30%;
+    margin-bottom: 20px;
+}
+
